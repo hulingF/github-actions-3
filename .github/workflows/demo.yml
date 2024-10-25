@@ -17,6 +17,7 @@ jobs:
           path: dist/sha256.exe
 
   test-build-artifacts:
+    needs: build-on-windows
     runs-on: windows-latest
     steps:
       - name: download exe file
