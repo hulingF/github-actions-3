@@ -1,9 +1,0 @@
-name: read_variable_1
-on:
-  workflow_dispatch:
-jobs:
-  read_variable:
-    runs-on: ubuntu_22.04
-    steps:
-      - name: read variable
-        run: echo "FileName=${{ vars.FileName }}"
