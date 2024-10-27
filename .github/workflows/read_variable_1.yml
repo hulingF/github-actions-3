@@ -1,0 +1,9 @@
+name: read1
+on:
+  workflow_dispatch:
+jobs:
+  read_variable:
+    runs-on: ubuntu_latest
+    steps:
+      - name: read variable
+        run: echo ${{ vars.FileName }}
